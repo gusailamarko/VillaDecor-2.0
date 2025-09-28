@@ -3,35 +3,35 @@ const cardTexts = [
         title: "Abstract",
         text: "Abstract art doesn’t try to copy the real world. It’s more about colors, shapes, and feelings. Think of it as art that makes you feel something without needing to “look like” anything specific.",
         href: "/abstract",
-        img: "public/images/abstract_rep.jpg"
+        img: "/images/abstract_rep.jpg"
     },
     
     {
         title: "Cubism",
         text: "Cubism takes things apart and shows them from different angles at once. Imagine a face or guitar broken into little blocks and shapes, all stacked together. It’s like looking at an object in 3D but on a flat canvas.",
         href: "/cubism",
-        img: "/public/images/cubism_rep.jpg"
+        img: "/images/cubism_rep.jpg"
     },
     
     {
         title: "Portrait",
         text: "Portraits are all about people. Usually focused on the face, they can be realistic or stylized, serious or playful. The main idea is to capture personality or mood, not just what someone looks like.",
         href: "/portrait",
-        img: "/public/images/portrait_rep.jpg"
+        img: "/images/portrait_rep.jpg"
     },
     
     {
         title: "Realism",
         text: "Realism is art that tries to look as true to life as possible. No exaggeration, no fantasy — just the world, people, and everyday moments shown exactly as they are.",
         href: "/realism",
-        img: "/public/images/realism_rep.jpg"
+        img: "/images/realism_rep.jpg"
     },
     
     {
         title: "Surrealism",
         text: "Surrealism feels like stepping into a dream. Everyday things are mixed with strange, impossible twists — like floating objects, melting clocks, or odd combinations that don’t make sense but feel fascinating.",
         href: "/surrealism",
-        img: "/public/images/surrealism_rep.jpg"
+        img: "/images/surrealism_rep.jpg"
     }
 ]
 

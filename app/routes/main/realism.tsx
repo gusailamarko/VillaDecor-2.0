@@ -19,7 +19,7 @@ const realism = ({loaderData}:Route.ComponentProps) => {
         <CarouselItemsDirective>
           {imgs.map(img => (
             <CarouselItemDirective key={img.$id} template={() => (
-              <img className="m-auto w-[90%] h-[650px]" src={`/public/images/Paintings/Realism/${img.src}`}/>
+              <img className="m-auto w-[90%] h-[650px]" src={`/images/Paintings/Realism/${img.src}`}/>
             )}/>
           ))}
         </CarouselItemsDirective>

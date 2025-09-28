@@ -19,7 +19,7 @@ const surrealism = ({loaderData}:Route.ComponentProps) => {
         <CarouselItemsDirective>
           {imgs.map(img => (
             <CarouselItemDirective key={img.$id} template={() => (
-              <img className="m-auto w-[90%] h-[650px]" src={`/public/images/Paintings/Surrealism/${img.src}`}/>
+              <img className="m-auto w-[90%] h-[650px]" src={`/images/Paintings/Surrealism/${img.src}`}/>
             )}/>
           ))}
         </CarouselItemsDirective>

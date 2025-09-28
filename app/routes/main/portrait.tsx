@@ -19,7 +19,7 @@ const portrait = ({loaderData}:Route.ComponentProps) => {
         <CarouselItemsDirective>
           {imgs.map(img => (
             <CarouselItemDirective key={img.$id} template={() => (
-              <img className="m-auto w-[90%] h-[650px]" src={`/public/images/Paintings/Portrait/${img.src}`}/>
+              <img className="m-auto w-[90%] h-[650px]" src={`/images/Paintings/Portrait/${img.src}`}/>
             )}/>
           ))}
         </CarouselItemsDirective>

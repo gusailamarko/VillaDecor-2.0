@@ -14,10 +14,10 @@ const MobileNav = () => {
     <div className="mobile-sidebar sm:block md:hidden wrapper bg-white">
         <header className="flex justify-between items-center p-4">
             <Link to="/">
-                <img src="/public/images/villa_gif.gif" alt="Logo" className="size-[40px]"/>
+                <img src="/images/villa_gif.gif" alt="Logo" className="size-[40px]"/>
             </Link>
             <button onClick={toggleSidebar}>
-                <img src="/public/icons/menu.svg" alt="Menu" className="size-7"/>
+                <img src="/icons/menu.svg" alt="Menu" className="size-7"/>
             </button>
         </header>
 

@@ -3,7 +3,7 @@ const Footer = () => {
     <div id="contact" className="footer flex justify-evenly pt-5 gap-[50px] text-white border-t-3 border-black">
       <div className="flex flex-col w-1/2 items-center">
         <h3 className="text-center underline">VILLADECOR</h3>
-        <img className="size-[200px]" src="/public/images/villa_gif.gif" alt="Logo" />
+        <img className="size-[200px]" src="/images/villa_gif.gif" alt="Logo" />
       </div>
       <div className="flex flex-col items-center w-1/2">
         <h3 className="text-center underline">LINKS</h3>
