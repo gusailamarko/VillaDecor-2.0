@@ -19,7 +19,7 @@ const cubism = ({loaderData}:Route.ComponentProps) => {
         <CarouselItemsDirective>
           {imgs.map(img => (
             <CarouselItemDirective key={img.$id} template={() => (
-              <img className="m-auto w-[90%] h-[650px]" src={`../../../assets/images/Paintings/Cubism/${img.src}`}/>
+              <img className="m-auto w-[90%] h-[650px]" src={`/public/images/Paintings/Cubism/${img.src}`}/>
             )}/>
           ))}
         </CarouselItemsDirective>

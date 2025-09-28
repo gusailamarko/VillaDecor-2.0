@@ -49,7 +49,7 @@ body {
 
 #artist-info
 {
-  background-image: url('../assets/images/artist_pfp.jpg');
+  background-image: url('/public/images/artist_pfp.jpg');
   background-size: cover;
   background-position: center;
   height: 88vh;

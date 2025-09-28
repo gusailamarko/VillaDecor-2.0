@@ -6,7 +6,7 @@ const mainPage = () => {
     <main>
         <MobileNav/>
         <Navbar/>
-        <ArtistInfo src="../assets/images/artist_pfp.jpg"/>
+        <ArtistInfo src="public/images/artist_pfp.jpg"/>
         <Works/>
         <Footer/>
     </main>

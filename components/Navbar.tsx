@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <nav className="hidden md:flex w-full bg-white text-black flex items-center">
       <div className="md:w-3/12 m-4">
-        <img src="/assets/images/villa_gif.gif" className="size-[50px]" alt="Logo" />
+        <img src="/public/images/villa_gif.gif" className="size-[50px]" alt="Logo" />
       </div>
       <div className="md:w-9/12 flex justify-end">
         <div className="flex justify-end gap-6 m-4">
