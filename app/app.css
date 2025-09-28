@@ -1,0 +1,72 @@
+@import "../node_modules/@syncfusion/ej2-base/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-react-buttons/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-react-grids/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-react-navigations/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-react-splitbuttons/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-react-dropdowns/styles/material.css";
+@import "@syncfusion/ej2-base/styles/material.css";
+@import "@syncfusion/ej2-react-popups/styles/material.css";
+@import "@syncfusion/ej2-react-buttons/styles/material.css";
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+html,
+body {
+  @apply bg-white dark:bg-gray-950;
+
+  @media (prefers-color-scheme: dark) {
+    color-scheme: dark;
+  }
+
+  scroll-behavior: smooth;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar 
+{
+    width: 5px;
+}
+  
+::-webkit-scrollbar-track 
+{
+    background: #2c2c2c; 
+}
+   
+
+::-webkit-scrollbar-thumb 
+{
+    background: white; 
+}
+  
+::-webkit-scrollbar-thumb:hover 
+{
+    background: #2c2c2c; 
+}
+
+#artist-info
+{
+  background-image: url('../assets/images/artist_pfp.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 88vh;
+}
+
+.toBeExpanded
+{
+  height: auto;
+  width: auto;
+}
+
+.expanded
+{
+  height: 30vh;
+}
+
+.footer
+{
+  background-color: #2c2c2c;
+}
