@@ -15,7 +15,7 @@ const abstract = ({loaderData}:Route.ComponentProps) => {
     <main>
       <MobileNav/>
       <Navbar/>
-      <CarouselComponent>
+      <CarouselComponent id="works">
         <CarouselItemsDirective>
           {imgs.map(img => (
             <CarouselItemDirective key={img.$id} template={() => (

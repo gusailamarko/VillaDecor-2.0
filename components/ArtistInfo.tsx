@@ -39,8 +39,8 @@ const ArtistInfo = ({src}:ArtistInfoProps) => {
         ))}
       </div>
 
-      <DialogComponent id="popup" header={dialogHeader} visible={false} ref={dialogRef} isModal={true} showCloseIcon={true} width="400px">
-        <p>{dialogContent}</p>
+      <DialogComponent id="popup" header={dialogHeader} visible={false} ref={dialogRef} isModal={true} showCloseIcon={true} width={300}>
+        <p className="text-justify font-bold leading-5">{dialogContent}</p>
       </DialogComponent>
     </div>
   )
