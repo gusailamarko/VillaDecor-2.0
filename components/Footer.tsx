@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <div id="contact" className="footer flex flex-col items-center gap-[20px] text-white py-5">
       <div className="flex flex-row justify-center items-center w-full">
-        <p className="tangerine-bold footerTitle">VILLADECOR</p>
+        <p className="tangerine-bold text-xl md:text-3xl footerTitle">VILLADECOR</p>
       </div>
       <div className="flex flex-row justify-evenly w-full">
         <div className="relative group">
