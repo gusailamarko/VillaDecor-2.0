@@ -1,6 +1,8 @@
 import { getAbstractImgs } from "~/appwrite/getPaintings"
 import { Footer, MobileNav, Navbar, } from "../../../components/index";
 import type { Route } from "./+types/abstract";
+import { useEffect } from "react";
+import { setMetaTag } from "~/lib/utils";
 import { CarouselComponent, CarouselItemDirective, CarouselItemsDirective } from "@syncfusion/ej2-react-navigations";
 
 export const loader = async() => {
@@ -10,6 +12,10 @@ export const loader = async() => {
 
 const abstract = ({loaderData}:Route.ComponentProps) => {
   const imgs = loaderData;
+
+  useEffect(() => {
+      setMetaTag("VillaDecor | Abstract", "The official portfolio of the well-known Hungarian artist Béla 'Villa' Varga", "/images/villa_gif.gif");
+    }, []);
 
   return (
     <main>

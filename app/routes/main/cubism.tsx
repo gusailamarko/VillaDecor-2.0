@@ -2,6 +2,8 @@ import { getCubismImgs } from "~/appwrite/getPaintings"
 import { Footer, MobileNav, Navbar, } from "../../../components/index";
 import { CarouselComponent, CarouselItemDirective, CarouselItemsDirective } from "@syncfusion/ej2-react-navigations";
 import type { Route } from "./+types/cubism";
+import { useEffect } from "react";
+import { setMetaTag } from "~/lib/utils";
 
 export const loader = async() => {
   const cubismImgs = await getCubismImgs();
@@ -10,6 +12,10 @@ export const loader = async() => {
 
 const cubism = ({loaderData}:Route.ComponentProps) => {
   const imgs = loaderData;
+
+  useEffect(() => {
+      setMetaTag("VillaDecor | Cubism", "The official portfolio of the well-known Hungarian artist Béla 'Villa' Varga", "/images/villa_gif.gif");
+    }, []);
 
   return (
     <main>
