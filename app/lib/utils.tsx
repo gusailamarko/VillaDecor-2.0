@@ -5,6 +5,7 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
+let analyticsInitialized = false;
 export const setMetaTag = (name:string, content:string, iconSrc:string) => {
   let titleTag = document.querySelector("title");
   if (!titleTag) {
@@ -20,6 +21,26 @@ export const setMetaTag = (name:string, content:string, iconSrc:string) => {
     iconLink.setAttribute("href", iconSrc);
     iconLink.setAttribute("rel", "icon");
     document.head.appendChild(iconLink);
+  }
+
+  if(!analyticsInitialized)
+  {
+    analyticsInitialized = true;
+
+    let analyticsTag = document.createElement("script");
+    analyticsTag.setAttribute("id", "google-analytics");
+    analyticsTag.setAttribute("async", "");
+    analyticsTag.setAttribute("src", "https://www.googletagmanager.com/gtag/js?id=G-6E02GF4Q02");
+    document.head.appendChild(analyticsTag);
+
+    let analyticsDataLayer = document.createElement("script");
+    analyticsDataLayer.textContent = `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-6E02GF4Q02');
+      `;
+    document.head.appendChild(analyticsDataLayer);
   }
 
   const setOrUpdate = (selector: string, attr: string, value: string) => {
